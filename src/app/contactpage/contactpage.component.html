@@ -1,0 +1,84 @@
+<div class="pop">
+    <div class="head">
+        <app-header></app-header>
+    </div>
+
+    <div class="comp1">
+            <h2> Contactez-nous</h2>
+            <span class="sous">Nous sommes à votre écoute pour toute question ou besoin d'information. <br>Contactez-nous par téléphone, email, ou visitez-nous directement pour un service rapide et attentif. Votre santé est notre priorité.</span>
+            <nav class="breadcrumb">
+                <a href="#" class="b1">Home</a>
+                <span>&gt;</span>
+                <p href="/survey" class="b2">Contact</p>
+              </nav>    
+    </div>
+
+<div class="data">
+    <div class="left">
+            <h1> N'hésitez pas à nous contacter</h1>
+            <h3>
+                <img src="assets/appel.gif" alt="phone icon" class="icon">
+                Appelez ou écrivez-nous
+            </h3>
+            <span>
+                <strong>Téléphone</strong>: 05 36 75 11 50
+            <br><strong class="eml">Email</strong>: Docconnect&#64;docconnect.ma
+            </span>
+            <hr class="rounded">
+            <h3> 
+                <img src="assets/trouse.gif" alt="phone icon" class="icon">
+                Services à domicile
+            </h3>
+            <span>
+                Nos services à domicile sont disponibles <br><strong class="eml">24h/24h, 7j/7</strong> pour répondre à vos besoins de santé.
+            </span>
+            <hr class="rounded">
+
+            <h3>
+                <img src="assets/emp.gif" alt="phone icon" class="icon">
+                Emplacement</h3>
+            <span>
+                Rue Annakhil, étage 5 Oujda 60000<br>
+                <a href="https://www.google.com/maps/dir/34.684885,-1.8891771/supmtioujda/@34.6705002,-1.9179463,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xd7864a5817de333:0x4365aa956bd4ff1e!2m2!1d-1.8985378!2d34.6569566?entry=ttu">Localisation</a>
+            </span>
+            <hr class="rounded">
+    </div>
+    <div class="right">
+            <h2>Écrivez vos questions</h2>
+            <span class="sou">Merci de compléter le formulaire ci-dessous. Nous vous répondrons dans les plus brefs délais</span>
+        <form ng-submit="sendMessage()">
+          <div class="flex-container">
+            <div class="flex-item">
+                <label for="name">Nom Complet*</label><br>
+                <input type="text" id="name" name="name" placeholder="Entrez votre nom complet"required><br>
+           </div>
+            <div class="flex-item">
+                <label for="email">Adresse courriel*</label><br>
+                <input type="email" id="email" name="email" placeholder="email@email.com" required>
+            </div>
+        </div>
+
+          <label for="object">Objet</label><br>
+          <input type="text" id="objet" name="name" placeholder="Quel est l'objet de votre message ?"><br>
+
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message"placeholder="Ecrivez votre message" required></textarea>
+
+          <input type="submit" value="ENVOYER VOTRE MESSAGE" class="bout">
+        </form>
+    </div>
+</div>
+<div class="englobe"> 
+<footer>
+    <nav class="breadcrumbFo">
+        <p> <br>&copy; 2024 Cabinet médical DocConnect. Tous droits réservés. <br>Conçu et developpé par CHIGUEUR Manal
+        </p>
+    </nav>
+</footer>
+<div class="foot">
+        
+</div>
+</div>
+
+</div>
+

@@ -1,0 +1,18 @@
+<div id="container">
+    <div id="logo">
+        <a href="">
+            <img class="logo-img" src="assets/Logoo.png" alt="Logo du cabinet">
+        </a> 
+    </div>
+    
+    <div id="links"> 
+        <a class="link" href="#" (click)="scrollToTop()">Acceuil</a>
+        <div class="link" (click)="scrollToSection('cabinet')">Cabinet</div>
+        <div class="link" (click)="scrollToSection('equipe')">Equipe</div>
+        <a class="link" routerLink="/contactpage">Contact</a>
+        <a class="link" routerLink="/rdv">Prendre un rendez-vous</a>
+        <div>|</div>
+        <div *ngIf="!authService.session" class="link" (click)="login()">Se connecter</div>
+        <div *ngIf="authService.session" class="link" (click)="authService.session=undefined"> Se déconnecter</div>
+    </div>
+</div>

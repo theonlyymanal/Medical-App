@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  width: 100%;
+  height: 120px;
+  margin-top: 60px;
+  margin-bottom: -50px;
+  font-size: 29px;
+  font-weight: 550;
+  text-align: center;
+  color: #0b4c8e;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.card_image img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  transition: opacity 0.5s;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #8dbbef 40%, #d4eaf0 100%);
+  transition: transform 0.5s;
+}
+
+.card_title {
+  color: #242526;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.card_title2 {
+  font-size: 16px;
+  color: #1858b1;
+}
+
+.card_text {
+  color: #242323;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+
+.btn {
+  color: #2d79e3;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  background: #f7f8f9;
+}
+
+.btn:hover {
+  border: 1px solid #d4cfcf;
+  color:#0b4c8e;
+}
+
+.card .more_text {
+  display: none;
+  color: #242323;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+  
+}
+
+.card.show_more .card_content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(0);
+  background: linear-gradient(to bottom left, #d4eaf0 40%, #2368e0 100%);
+}
+
+.card.show_more .more_text {
+  display: block;
+  margin-top: 1rem;
+}
+
+.card.show_more .card_image img {
+  opacity: 0.3;
+}
+
+.card.show_more {
+  z-index: 1;
+  height: auto;
+  position: relative;
+}

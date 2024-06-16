@@ -1,0 +1,135 @@
+<div class="head">
+    <app-header></app-header>
+</div>
+
+<nav class="main-menu">
+    <div class="logo-containers">
+        <a href="/patient"><img src="assets\m2.png" alt="Logo" class="logo"></a>
+    </div>
+    <div class="scrollbar" id="style-1">
+        <ul>
+            <li class="darkerli">
+                <a routerLink="/patient">
+                    <span class="material-symbols-outlined">
+                        switch_account
+                    </span><span class="nav-text">Mon Portail</span>
+                </a>
+            </li>
+            <li class="darkerli">
+                <a routerLink="/compte">
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span><span class="nav-text">Compte</span>
+                </a>
+            </li>
+
+            <li class="darkerli">
+                <a routerLink="/calendar">
+                    <span class="material-symbols-outlined">
+                        calendar_month
+                    </span>
+                    <span class="nav-text">Rendez-vous</span>
+                </a>
+            </li>
+
+            <li class="darkerli">
+                <a routerLink="/survey">
+                    <span class="material-symbols-outlined">
+                        patient_list
+                    </span> <span class="nav-text">Dossier Médical</span>
+                </a>
+            </li>
+            
+            <li class="darkerli">
+                <a routerLink="/payment">
+                    <span class="material-symbols-outlined">
+                        payment
+                    </span><span class="nav-text">Facturation et paiement</span>
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+</nav>
+
+
+<div class="bod">
+    
+    <div class="wrapper">
+        <div class="prescription-form">
+           <div>
+                <img src="assets/3.png" alt="pageimage" class="image">
+            </div>
+            <h2> <span class="dos">DOSSIER MÉDICAL PERSONNEL</span> </h2>
+            <form id="surveyForm">
+                <div class="form-group">
+                    <label for="patientName">NOM DU PATIENT </label>
+                    <input type="text" id="patientName" placeholder="Entrer votre nom " required />
+                </div>
+                <div class="form-group">
+                    <label for="patientAge">ÂGE DU PATIENT</label>
+                    <input type="number" id="patientAge" placeholder="Entrer votre l'âge" required />
+                </div>
+                <div class="form-group">
+                    <label for="patientSexe">SEXE</label>
+                    <select id="patientSexe" required>
+                        <option value="male">Homme</option>
+                        <option value="female">Femme</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="grpSanguin">GROUPE SANGUIN</label>
+                    <select id="grpSanguin" required>
+                        <option value="O">O -</option>
+                        <option value="O">O +</option>
+                        <option value="B">B -</option>
+                        <option value="B">B +</option>
+                        <option value="A">A -</option>
+                        <option value="A">A +</option>
+                        <option value="AB">AB +</option>
+                        <option value="AB">AB -</option>
+                    </select>
+                </div>
+        
+                <div class="form-group">
+                    <label for="assurance">COUVERTURE MÉDICALE</label>
+                    <select id="assurance" required>
+                        <option value="O">CNOPS</option>
+                        <option value="O">CNSS</option>
+                        <option value="B">AMO</option>
+                        <option value="AB">Autre</option>
+                    </select>
+                    <textarea id="autreAssurance" placeholder="Si votre couverture médicale n'est pas présente dans la liste, je sélectionne la mention Autre et je saisis son nom ci-dessous. *"></textarea>
+                </div>                
+                <div class="form-group">
+                    <label for="conditions">MALADIES CHRONIQUES</label>
+                    <textarea id="conditions" placeholder=" Par exemple, diabète, hypertension, asthme"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="chirurgie">ANTÉCÉDENTS CHIRURGICAUX</label>
+                    <textarea id="chirurgie" placeholder="Veuillez saisir toutes vos chirurgies antérieures, le cas échéant"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="medicament">MÉDICAMENTS</label>
+                    <textarea id="medicament" placeholder="Veuillez indiquer tous les médicaments que vous prenez actuellement"></textarea>
+                </div>
+                <div class="form-group0">
+                    <input type="checkbox" id="certification" required/>
+                    <label for="certification">Je certifie que les informations ci-dessus sont vraies et
+                        exactes.</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            
+            
+            <footer>
+                <p>Cabinet Medical DocConnect</p>
+                <p>Numéro de telephone : +212 543218978</p>
+                <p>Adresse : Rue Annakhil Étage 5, Oujda</p>
+            </footer>
+            <div id="result"></div>
+        </div>
+    </div>
+
+</div>
+

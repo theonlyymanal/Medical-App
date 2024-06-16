@@ -1,0 +1,174 @@
+<div class="head">
+    <app-header></app-header>
+</div>
+
+<nav class="main-menu">
+    <div class="logo-containers">
+        <a href="/patient"><img src="assets\m2.png" alt="Logo" class="logo"></a>
+    </div>
+    <div class="scrollbar" id="style-1">
+        <ul>
+            <li class="darkerli">
+                <a routerLink="/patient">
+                    <span class="material-symbols-outlined">
+                        switch_account
+                    </span><span class="nav-text">Mon Portail</span>
+                </a>
+            </li>
+            <li class="darkerli">
+                <a routerLink="/compte">
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span><span class="nav-text">Compte</span>
+                </a>
+            </li>
+
+            <li class="darkerli">
+                <a routerLink="/calendar">
+                    <span class="material-symbols-outlined">
+                        calendar_month
+                    </span>
+                    <span class="nav-text">Rendez-vous</span>
+                </a>
+            </li>
+
+            <li class="darkerli">
+                <a routerLink="/survey">
+                    <span class="material-symbols-outlined">
+                        patient_list
+                    </span> <span class="nav-text">Dossier Médical</span>
+                </a>
+            </li>
+            
+            <li class="darkerli">
+                <a routerLink="/payment">
+                    <span class="material-symbols-outlined">
+                        payment
+                    </span><span class="nav-text">Facturation et paiement</span>
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+</nav>
+
+
+
+<div class="bodi">
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="header-background">
+                <img src="assets/pict.webp" alt="Header Background" class="header-background-image">
+            </div>
+            <img src="assets/p.webp" alt="Profile Picture" class="profile-picture">
+        </div>
+
+        <div class="profile-details">
+            <h2>INFORMATIONS PERSONNELLES</h2>
+
+            <div class="element-item">
+                <div class="table-row">
+                    <div class="table-cell">
+                        <label for="full-name"><span class="material-symbols-outlined">
+                                badge
+                            </span>Nom Complet:</label>
+                    </div>
+                    <div class="table-cell">
+                        <input type="text" id="full-name" value="CHIGUEUR">
+                        <input type="text" id="full-name" value="Manal">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="element-item">
+                <div class="table-row">
+                    <div class="table-cell">
+                        <label for="city"><span class="material-symbols-outlined">
+                                home
+                            </span>Adresse1 :</label>
+                    </div>
+                    <div class="table-cell">
+                        <input type="text" id="city" value="Oujda">
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <label for="country"><span class="material-symbols-outlined">
+                                home
+                            </span>Adresse2 :</label>
+                    </div>
+                    <div class="table-cell">
+                        <input type="text" id="country" value="Maroc">
+                    </div>
+                </div>
+            </div>
+
+            <div class="element-item alone">
+                <div class="table-row">
+                    <div class="table-cell">
+                        <label for="bio"><span class="material-symbols-outlined">
+                                description
+                            </span>Bio: </label>
+                    </div>
+                    <div class="table-cell">
+                        <input type="text" id="bio" value="Description Personnelle">
+                    </div>
+                </div>
+            </div>
+
+            <div class="element-item alone">
+                <div class="table-row">
+                    <div class="table-cell">
+                        <label for="email"><span class="material-symbols-outlined">
+                                alternate_email
+                            </span>Email:</label>
+                    </div>
+                    <div class="table-cell">
+                        <input type="text" id="email" value="Manal@example.com">
+                    </div>
+                </div>
+            </div>
+
+            <div class="element-item1">
+                <div class="table-row">
+                    <div class="table-cell">
+                        <label for="city"><span class="material-symbols-outlined">
+                                lock
+                            </span>Changer le mot de passe :</label>
+                    </div>
+                    <div class="table-cell">
+                        <input type="text" id="city" placeholder="MOT DE PASSE ACTUEL">
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell"></div>
+                    <div class="table-cell">
+                        <input type="text" id="country" placeholder="NOUVEAU MOT DE PASSE">
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell"></div>
+                    <div class="table-cell">
+                        <input type="text" id="country" placeholder="CONFIRMER NOUVEAU MOT DE PASSE">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="profile-actions">
+            <button class="btn edit-btn">Sauvgarder mon profile</button>
+            <button class="btn delete-btn">Supprimer mon compte</button>
+            <button class="btn home-btn"><a onclick="location.href='/acceuil'">Retourner à l'acceuil</a></button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <nav class="breadcrumbFo">
+        <p> <br>&copy; 2024 Cabinet médical DocConnect. Tous droits réservés. <br>Conçu et developpé par Manal CHIGUEUR
+        </p>
+    </nav>
+</footer>
+<div class="foot"></div>
